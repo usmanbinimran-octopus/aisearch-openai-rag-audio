@@ -13,7 +13,7 @@ import useAudioPlayer from "@/hooks/useAudioPlayer";
 
 import { GroundingFile, ToolResult } from "./types";
 
-import logo from "./assets/logo.svg";
+import logo from "./assets/Logo-LightTheme.png";
 
 function App() {
     const [isRecording, setIsRecording] = useState(false);
@@ -66,16 +66,16 @@ function App() {
     return (
         <div className="flex min-h-screen flex-col bg-gray-100 text-gray-900">
             <div className="p-4 sm:absolute sm:left-4 sm:top-4">
-                <img src={logo} alt="Azure logo" className="h-16 w-16" />
+                <img src={logo} alt="Azure logo" className="h-12 w-60" />
             </div>
             <main className="flex flex-grow flex-col items-center justify-center">
-                <h1 className="mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+            <h1 className="mb-8 bg-gradient-to-r from-customEmint to-customBlue bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
                     {t("app.title")}
                 </h1>
                 <div className="mb-4 flex flex-col items-center justify-center">
                     <Button
                         onClick={onToggleListening}
-                        className={`h-12 w-60 ${isRecording ? "bg-red-600 hover:bg-red-700" : "bg-purple-500 hover:bg-purple-600"}`}
+                        className={`h-12 w-60 ${isRecording ? "bg-red-600 hover:bg-red-700" : "bg-customPurple hover:bg-customPurple-opacity-90"}`}
                         aria-label={isRecording ? t("app.stopRecording") : t("app.startRecording")}
                     >
                         {isRecording ? (

@@ -12,6 +12,20 @@ export default {
             colors: {
                 background: "hsl(var(--background))",
                 foreground: "hsl(var(--foreground))",
+                purple: {
+                    600: "rgb(43, 137, 241)", // Override the original bg-purple-600 color
+                    },
+                customBlue: '#0061ff',
+                customEmint: '#00386d',
+                customPurple: {
+                    DEFAULT: 'rgb(10, 88, 202)', // This is your custom color
+                    opacity: {
+                        100: 'rgba(10, 88, 202, 1)',
+                        90: 'rgba(10, 88, 202, 0.9)',
+                        80: 'rgba(10, 88, 202, 0.8)',
+                        // Add more opacity levels as needed
+                    }
+                },
                 card: {
                     DEFAULT: "hsl(var(--card))",
                     foreground: "hsl(var(--card-foreground))"
@@ -50,6 +64,10 @@ export default {
                     4: "hsl(var(--chart-4))",
                     5: "hsl(var(--chart-5))"
                 }
+            },
+            backgroundImage: {
+                'gradient-to-customBlue': 'linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))',
+                'gradient-from-customEmint': 'linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))',
             },
             fontSize: {
                 "7xl": ["4.5rem", { lineHeight: "1.3" }],

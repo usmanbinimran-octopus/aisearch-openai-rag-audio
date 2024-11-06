@@ -1,13 +1,13 @@
 {
     "app": {
-        "title": "Talk to your data",
-        "footer": "Built with Azure AI Search + Azure OpenAI",
+        "title": "Interact with OmniChat",
+        "footer": "Built by OmniChat DEV Team",
         "stopRecording": "Stop recording",
         "startRecording": "Start recording",
         "stopConversation": "Stop conversation"
     },
     "status": {
-        "notRecordingMessage": "Ask anything about Contoso employee benefits",
+        "notRecordingMessage": "Ask anything about DNMC Rainy Season Work Procedure or OmniChat URS",
         "conversationInProgress": "Conversation in progress"
     },
     "history": {
